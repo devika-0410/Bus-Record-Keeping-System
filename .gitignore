@@ -1,0 +1,10 @@
+.classpath
+.project
+.settings/
+target/
+build/
+*.class
+*.log
+.DS_Store
+Thumbs.db
+WebContent/WEB-INF/lib/*.jar

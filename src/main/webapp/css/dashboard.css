@@ -1,0 +1,218 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #eef1f5;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #2c3e50;
+}
+
+.dashboard {
+    max-width: 1050px;
+    margin: 28px auto;
+    padding: 0 20px 40px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a3c6e;
+    color: white;
+    padding: 18px 28px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.topbar h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+}
+
+.topbar > div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.topbar span {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.logout-btn {
+    background: transparent;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid rgba(255,255,255,0.5);
+    transition: background 0.2s;
+}
+
+.logout-btn:hover {
+    background: rgba(255,255,255,0.12);
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    margin-top: 26px;
+}
+
+.menu-card {
+    background: white;
+    padding: 26px 18px;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    text-decoration: none;
+    color: #1a3c6e;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #e1e6eb;
+    border-top: 3px solid #1a3c6e;
+    transition: box-shadow 0.2s, transform 0.15s;
+}
+
+.menu-card:hover {
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+    transform: translateY(-2px);
+}
+
+.dashboard h3 {
+    color: #1a3c6e;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 2px solid #d7dde4;
+    padding-bottom: 8px;
+}
+
+.dashboard form {
+    background: white;
+    padding: 22px 24px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    margin-bottom: 22px;
+    max-width: 520px;
+    border-left: 3px solid #1a3c6e;
+}
+
+.dashboard form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    color: #3d4852;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.dashboard form input,
+.dashboard form select,
+.dashboard form textarea {
+    width: 100%;
+    padding: 9px 11px;
+    margin-top: 6px;
+    border: 1px solid #cbd3da;
+    border-radius: 4px;
+    font-size: 14px;
+    background: #fbfcfd;
+}
+
+.dashboard form input:focus,
+.dashboard form select:focus,
+.dashboard form textarea:focus {
+    outline: none;
+    border-color: #1a3c6e;
+    background: #fff;
+}
+
+.dashboard form button {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background: #1a3c6e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.dashboard form button:hover {
+    background: #14305a;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+table th {
+    background: #1a3c6e;
+    color: white;
+    padding: 11px 14px;
+    text-align: left;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+table td {
+    padding: 11px 14px;
+    border-bottom: 1px solid #eef1f5;
+    font-size: 13.5px;
+    color: #2c3e50;
+}
+
+table tr:nth-child(even) td {
+    background: #f8f9fb;
+}
+
+table tr:hover td {
+    background: #eef3fa;
+}
+
+table td b {
+    color: #1a3c6e;
+}
+
+table form {
+    background: none;
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+    border: none;
+    max-width: none;
+}
+
+table form button {
+    padding: 6px 12px;
+    font-size: 11.5px;
+    background: #1a3c6e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0;
+}
+
+table form button:hover {
+    background: #14305a;
+}
